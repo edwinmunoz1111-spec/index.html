@@ -9,7 +9,6 @@
 </head>
 <body class="bg-gray-50 font-sans">
 
-    <!-- Header -->
     <header class="bg-blue-600 text-white p-6 shadow-lg flex justify-between items-center">
         <h1 class="text-2xl font-bold flex items-center gap-2">
             <i class="fas fa-paw"></i> Dr. Paticas: Control de Proyecto
@@ -19,7 +18,6 @@
 
     <main class="max-w-7xl mx-auto p-6 space-y-6">
         
-        <!-- KPIs Superiores -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
                 <p class="text-xs font-bold text-gray-500 uppercase">Avance Global</p>
@@ -35,17 +33,15 @@
             </div>
         </div>
 
-        <!-- Tabla de Tareas -->
         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
             <div class="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
-                <h2 class="font-bold text-gray-700">Checklist de Tareas</h2>
-                <input type="text" placeholder="Buscar responsable..." class="text-xs border rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="font-bold text-gray-700">Checklist Integral de Tareas (Mayo)</h2>
             </div>
             
-            <div class="overflow-x-auto">
-                <table class="w-full text-left">
-                    <thead>
-                        <tr class="text-[10px] uppercase text-gray-400 font-bold bg-white">
+            <div class="overflow-x-auto max-h-[600px] overflow-y-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead class="sticky top-0 bg-white shadow-sm z-10">
+                        <tr class="text-[10px] uppercase text-gray-400 font-bold">
                             <th class="p-4">Tarea</th>
                             <th class="p-4">Responsable</th>
                             <th class="p-4">Progreso</th>
@@ -53,75 +49,92 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100">
-                        <!-- Tarea 1 -->
-                        <tr class="hover:bg-blue-50 transition">
+                        <!-- TAREAS DE MAYO -->
+                        <tr class="hover:bg-blue-50">
                             <td class="p-4 text-sm font-semibold text-gray-800">Centro de Costos Actualizado</td>
                             <td class="p-4 text-xs text-gray-600">Jose Arias</td>
-                            <td class="p-4 w-48">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-full bg-gray-200 rounded-full h-2">
-                                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-gray-500">100%</span>
-                                </div>
-                            </td>
-                            <td class="p-4"><span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-md font-bold">COMPLETADO</span></td>
+                            <td class="p-4 w-48 text-[10px] font-bold">100%</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">Completado</span></td>
                         </tr>
-                        <!-- Tarea 2 -->
-                        <tr class="hover:bg-blue-50 transition">
+                        <tr class="hover:bg-blue-50">
                             <td class="p-4 text-sm font-semibold text-gray-800">Dominio</td>
                             <td class="p-4 text-xs text-gray-600">Oscar Rodriguez</td>
-                            <td class="p-4 w-48">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-full bg-gray-200 rounded-full h-2">
-                                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-gray-500">100%</span>
-                                </div>
-                            </td>
-                            <td class="p-4"><span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-md font-bold">COMPLETADO</span></td>
+                            <td class="p-4 w-48 text-[10px] font-bold">100%</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">Completado</span></td>
                         </tr>
-                        <!-- Tarea 3 -->
-                        <tr class="hover:bg-blue-50 transition">
+                        <tr class="hover:bg-blue-50">
                             <td class="p-4 text-sm font-semibold text-gray-800">Diseño flujo cliente</td>
                             <td class="p-4 text-xs text-gray-600">Edwin Muñoz</td>
-                            <td class="p-4 w-48">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-full bg-gray-200 rounded-full h-2">
-                                        <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-gray-500">70%</span>
-                                </div>
-                            </td>
-                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold">EN CURSO</span></td>
+                            <td class="p-4 w-48 text-[10px] font-bold">70%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
                         </tr>
-                        <!-- Tarea 4 -->
-                        <tr class="hover:bg-blue-50 transition">
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Flujos transaccionales portal</td>
+                            <td class="p-4 text-xs text-gray-600">Edwin Muñoz</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">75%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
                             <td class="p-4 text-sm font-semibold text-gray-800">Modulo Video Consulta</td>
                             <td class="p-4 text-xs text-gray-600">Juan David</td>
-                            <td class="p-4 w-48">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-full bg-gray-200 rounded-full h-2">
-                                        <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-gray-500">75%</span>
-                                </div>
-                            </td>
-                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold">EN CURSO</span></td>
+                            <td class="p-4 w-48 text-[10px] font-bold">75%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Ubicación aliados (Clinicas)</td>
+                            <td class="p-4 text-xs text-gray-600">Olga Alvarez</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">80%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Versión final Brochure</td>
+                            <td class="p-4 text-xs text-gray-600">Rafael Melo</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">90%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Definir valor de los planes</td>
+                            <td class="p-4 text-xs text-gray-600">Rafael Melo</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">100%</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">Completado</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Número WhatsApp Operativo</td>
+                            <td class="p-4 text-xs text-gray-600">Oscar Rodriguez</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">50%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Contratos Veterinarios</td>
+                            <td class="p-4 text-xs text-gray-600">Lorena Alvarez</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">30%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Convocatoria Veterinarios</td>
+                            <td class="p-4 text-xs text-gray-600">Juan Paez</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">0%</td>
+                            <td class="p-4"><span class="bg-gray-100 text-gray-500 text-[10px] px-2 py-1 rounded-md font-bold uppercase">Pendiente</span></td>
+                        </tr>
+                        <!-- Tareas adicionales para completar el checklist real -->
+                        <tr class="hover:bg-blue-50">
+                            <td class="p-4 text-sm font-semibold text-gray-800">Definición de KPI'S</td>
+                            <td class="p-4 text-xs text-gray-600">Edwin Muñoz</td>
+                            <td class="p-4 w-48 text-[10px] font-bold">50%</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded-md font-bold uppercase">En Curso</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- Bitácora -->
         <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
             <h3 class="text-blue-800 font-bold mb-3 flex items-center gap-2">
                 <i class="fas fa-clipboard-list"></i> Bitácora de Avances para Gerencia
             </h3>
             <ul class="space-y-2 text-sm text-blue-900">
-                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i> <strong>30 Abr:</strong> Actualización masiva de tareas desde archivo maestro.</li>
-                <li class="flex items-center gap-2"><i class="fas fa-exclamation-triangle text-orange-500"></i> <strong>Nota:</strong> Pendiente validación de pasarela de pagos.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i> <strong>Mayo 2026:</strong> Consolidación de tareas 4G GPS y Triage IA.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-info-circle text-blue-500"></i> Se ha priorizado el flujo transaccional para el lanzamiento piloto.</li>
             </ul>
         </div>
     </main>
